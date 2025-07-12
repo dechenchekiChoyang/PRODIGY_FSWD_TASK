@@ -1,4 +1,4 @@
-Full Stack Project Suite – Prodigy Infotech Internship Tasks
+🚀 Full Stack Project Suite – Prodigy Infotech Internship Tasks
 Welcome to the Full Stack Project Suite developed during the Prodigy Infotech Internship. This repository includes five distinct tasks that cover various real-world application scenarios, from secure authentication systems to e-commerce and social media platforms.
 
 📌 Task 01: Secure User Authentication System
@@ -127,5 +127,4 @@ Backend: Node.js, Express.js
 
 Database: MongoDB / PostgreSQL
 
-Cloud Storage: Cloudinary / Firebase Storage
-
+Cloud Storage: Cloudinary / Firebase Storag
