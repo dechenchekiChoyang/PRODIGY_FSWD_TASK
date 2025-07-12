@@ -1,143 +1,64 @@
-# MERN Stack Authentication System
+# 🧑‍💼 Employee Management System
 
-A full-stack authentication system built with the MERN stack (MongoDB, Express.js, React.js, Node.js) featuring user registration, login, and role-based access control.
+A full-stack web application that allows administrators to manage employee records efficiently and securely. This system supports **CRUD (Create, Read, Update, Delete)** operations and includes proper validation and authentication mechanisms to protect sensitive employee data.
 
-## Features
+## 🚀 Features
 
-- User registration and login
-- Secure password hashing with bcrypt
-- JWT-based authentication
-- Protected routes
-- Role-based access control (User/Admin)
-- Responsive UI with Material-UI
-- Form validation
-- Persistent login sessions
+- ✅ Secure user authentication and authorization
+- 📋 Create, view, update, and delete employee records
+- 🔒 Protected routes with role-based access control
+- 🧾 Form validation (both client-side and server-side)
+- 📂 RESTful API integration
+- 💡 Responsive and user-friendly UI
 
-## Prerequisites
+## 🛠️ Tech Stack
 
-- Node.js (v14 or later)
-- npm or yarn
-- MongoDB Atlas account or local MongoDB installation
+**Frontend:**
+- React.js
+- Axios
+- React Router
+- Tailwind CSS / Bootstrap (your choice)
 
-## Setup Instructions
-
-### Backend Setup
-
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Create a `.env` file in the backend directory with the following variables:
-   ```
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret_key
-   JWT_EXPIRE=30d
-   NODE_ENV=development
-   PORT=5000
-   ```
-
-4. Start the backend server:
-   ```bash
-   npm run dev
-   ```
-   The server will start on `http://localhost:5000`
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-   The app will open in your default browser at `http://localhost:3000`
-
-## Project Structure
-
-```
-mern-auth/
-├── backend/               # Backend server
-│   ├── config/            # Configuration files
-│   ├── controllers/       # Route controllers
-│   ├── middleware/        # Custom middleware
-│   ├── models/            # MongoDB models
-│   ├── routes/            # API routes
-│   ├── .env               # Environment variables
-│   └── server.js          # Main server file
-├── frontend/              # Frontend React app
-│   ├── public/            # Static files
-│   └── src/               # React source code
-│       ├── components/    # Reusable components
-│       ├── contexts/      # React contexts
-│       ├── pages/         # Page components
-│       ├── services/      # API services
-│       ├── App.js         # Main App component
-│       └── index.js       # Entry point
-└── README.md              # Project documentation
-```
-
-## API Endpoints
-
-### Auth Routes
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login user
-- `GET /api/auth/me` - Get current user
-- `POST /api/auth/logout` - Logout user
-
-### User Routes (Protected)
-- `GET /api/users` - Get all users (Admin only)
-- `GET /api/users/:id` - Get user by ID
-- `PUT /api/users/:id` - Update user
-- `DELETE /api/users/:id` - Delete user
-
-## Environment Variables
-
-### Backend
-- `MONGODB_URI` - MongoDB connection string
-- `JWT_SECRET` - Secret key for JWT
-- `JWT_EXPIRE` - JWT expiration time
-- `NODE_ENV` - Application environment (development/production)
-- `PORT` - Server port (default: 5000)
-
-## Technologies Used
-
-### Backend
+**Backend:**
 - Node.js
 - Express.js
-- MongoDB with Mongoose
-- JWT for authentication
-- bcryptjs for password hashing
-- dotenv for environment variables
+- MongoDB
+- Mongoose
+- bcryptjs / JWT for authentication
 
-### Frontend
-- React.js
-- React Router for routing
-- Material-UI for UI components
-- Formik and Yup for form handling and validation
-- Axios for HTTP requests
-- Context API for state management
+## 🗂️ Project Structure
 
-## License
+Install dependencies
 
-This project is licensed under the MIT License.
-Admin Panel SignUp page ScreenShot: ![image](https://github.com/user-attachments/assets/21c5315e-595b-49fb-976d-08a12b9427d4)
-Admin panel SignIn page ScreenShot:![image](https://github.com/user-attachments/assets/a1ace720-c9df-4b32-bd3a-cae3653e637a)
-User Interface page ScreenShot:![image](https://github.com/user-attachments/assets/20ce6dec-543e-4727-b173-11b80b8fe810)
+bash
+Copy
+Edit
+# Backend
+cd server
+npm install
 
+# Frontend
+cd ../client
+npm install
+Set up environment variables
 
+Create a .env file in the server/ directory:
 
+env
+Copy
+Edit
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+Run the application
 
+bash
+Copy
+Edit
+# In one terminal: Backend
+cd server
+npm run dev
+
+# In another terminal: Frontend
+cd client
+npm start
