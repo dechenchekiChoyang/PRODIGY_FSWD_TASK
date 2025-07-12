@@ -1,7 +1,7 @@
 Full Stack Project Suite – Prodigy Infotech Internship Tasks
 Welcome to the Full Stack Project Suite developed during the Prodigy Infotech Internship. This repository includes five distinct tasks that cover various real-world application scenarios, from secure authentication systems to e-commerce and social media platforms.
 
- Task 01: Secure User Authentication System
+📌 Task 01: Secure User Authentication System
 Objective:
 Implement a secure user authentication system with login and registration functionality. Users should be able to sign up, log in securely, and access protected routes after authentication.
 
@@ -29,7 +29,7 @@ Database: MongoDB
 
 Security: bcrypt, JWT
 
- Task 02: Employee Management System
+📌 Task 02: Employee Management System
 Objective:
 Build a web application that allows administrators to manage employee records through full CRUD operations, secured by authentication mechanisms.
 
@@ -55,7 +55,7 @@ Database: MongoDB / MySQL
 
 Authentication: JWT / Session-based
 
- Task 03: Local Store E-commerce Platform
+📌 Task 03: Local Store E-commerce Platform
 Objective:
 Design a complete e-commerce solution for a local business to showcase and sell products online.
 
@@ -79,7 +79,7 @@ Database: MongoDB / Firebase
 
 Payment Gateway: Stripe / Razorpay
 
- Task 04: Real-Time Chat Application
+📌 Task 04: Real-Time Chat Application
 Objective:
 Develop a real-time chat application using WebSockets for instant messaging.
 
@@ -103,7 +103,7 @@ Real-time Engine: Socket.IO / WebSocket
 
 Database: MongoDB / Firebase (for message persistence)
 
-Task 05: Social Media Platform
+📌 Task 05: Social Media Platform
 Objective:
 Create a social media platform where users can interact by sharing posts, liking, commenting, and uploading media.
 
