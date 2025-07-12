@@ -1,136 +1,94 @@
-# MERN Stack Authentication System
+Social Media Platform
+A full-featured social media web application that allows users to create profiles, share posts, upload media, like, and comment on other users’ content. The app includes features to enhance user engagement such as tagging, notifications, and an intuitive UI/UX design.
 
-A full-stack authentication system built with the MERN stack (MongoDB, Express.js, React.js, Node.js) featuring user registration, login, and role-based access control.
+🚀 Features
+👤 User Authentication (Sign up, Login, Logout)
 
-## Features
+📝 Create, edit, and delete posts
 
-- User registration and login
-- Secure password hashing with bcrypt
-- JWT-based authentication
-- Protected routes
-- Role-based access control (User/Admin)
-- Responsive UI with Material-UI
-- Form validation
-- Persistent login sessions
+📷 Image/Video upload support
 
-## Prerequisites
+❤️ Like and 💬 comment on posts
 
-- Node.js (v14 or later)
-- npm or yarn
-- MongoDB Atlas account or local MongoDB installation
+🔖 Tagging system for posts
 
-## Setup Instructions
+🧑‍🤝‍🧑 User profile with bio, avatar, and activity
 
-### Backend Setup
+🔍 Explore feed and search functionality
 
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
+📱 Responsive and user-friendly UI
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+🛠️ Tech Stack
+Frontend:
 
-3. Create a `.env` file in the backend directory with the following variables:
-   ```
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret_key
-   JWT_EXPIRE=30d
-   NODE_ENV=development
-   PORT=5000
-   ```
+HTML, CSS, JavaScript
 
-4. Start the backend server:
-   ```bash
-   npm run dev
-   ```
-   The server will start on `http://localhost:5000`
+React.js / Vue.js (or any framework of choice)
 
-### Frontend Setup
+Axios (for HTTP requests)
 
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
+Backend:
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+Node.js with Express.js
 
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-   The app will open in your default browser at `http://localhost:3000`
+RESTful API development
 
-## Project Structure
+JSON Web Token (JWT) for authentication
 
-```
-mern-auth/
-├── backend/               # Backend server
-│   ├── config/            # Configuration files
-│   ├── controllers/       # Route controllers
-│   ├── middleware/        # Custom middleware
-│   ├── models/            # MongoDB models
-│   ├── routes/            # API routes
-│   ├── .env               # Environment variables
-│   └── server.js          # Main server file
-├── frontend/              # Frontend React app
-│   ├── public/            # Static files
-│   └── src/               # React source code
-│       ├── components/    # Reusable components
-│       ├── contexts/      # React contexts
-│       ├── pages/         # Page components
-│       ├── services/      # API services
-│       ├── App.js         # Main App component
-│       └── index.js       # Entry point
-└── README.md              # Project documentation
-```
+Database:
 
-## API Endpoints
+MongoDB (Mongoose ODM)
 
-### Auth Routes
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login user
-- `GET /api/auth/me` - Get current user
-- `POST /api/auth/logout` - Logout user
+Media Upload:
 
-### User Routes (Protected)
-- `GET /api/users` - Get all users (Admin only)
-- `GET /api/users/:id` - Get user by ID
-- `PUT /api/users/:id` - Update user
-- `DELETE /api/users/:id` - Delete user
+Cloudinary or Firebase Storage Installation
+Clone the repository:
 
-## Environment Variables
+bash
+Copy
+Edit
+git clone https://github.com/your-username/social-media-app.git
+cd social-media-app
+Install server dependencies:
 
-### Backend
-- `MONGODB_URI` - MongoDB connection string
-- `JWT_SECRET` - Secret key for JWT
-- `JWT_EXPIRE` - JWT expiration time
-- `NODE_ENV` - Application environment (development/production)
-- `PORT` - Server port (default: 5000)
+bash
+Copy
+Edit
+cd server
+npm install
+Install client dependencies:
 
-## Technologies Used
+bash
+Copy
+Edit
+cd ../client
+npm install
+Environment Variables:
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB with Mongoose
-- JWT for authentication
-- bcryptjs for password hashing
-- dotenv for environment variables
+Create a .env file in /server with the following:
 
-### Frontend
-- React.js
-- React Router for routing
-- Material-UI for UI components
-- Formik and Yup for form handling and validation
-- Axios for HTTP requests
-- Context API for state management
+ini
+Copy
+Edit
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_URL=your_cloudinary_api_url
+Run the app:
 
-## License
+Start backend:
 
-This project is licensed under the MIT License.
+bash
+Copy
+Edit
+cd server
+npm run dev
+Start frontend:
+
+bash
+Copy
+Edit
+cd client
+npm start
+
+
